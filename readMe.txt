@@ -9,7 +9,6 @@ Kimliği doğrulanmamış kullanıcılar tüm içeriğe ulaşabilecek ancak
 sahiplenme işlemi için istek gönderdiğinde ilk önce login sayfasına yönlendirilecek
 eğer hesabı yoksa oradan register sayfasına yönlendirilecektir.  
 
-
 Proje Grubu:
 1.b191210049 Emre Harman
 2.b181200378 Furkan Şengül
