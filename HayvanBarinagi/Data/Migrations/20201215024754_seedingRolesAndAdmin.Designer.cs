@@ -4,14 +4,16 @@ using HayvanBarinagiCalisma.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HayvanBarinagiCalisma.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201215024754_seedingRolesAndAdmin")]
+    partial class seedingRolesAndAdmin
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -122,55 +124,19 @@ namespace HayvanBarinagiCalisma.Data.Migrations
                         {
                             Id = "a18be9c0-aa65-4af8-bd17-00bd9344e575",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4e7897a1-f6ef-4d95-b3ca-83d71551b899",
+                            ConcurrencyStamp = "f2718039-453b-44b4-beea-f59fa7050934",
                             DogumTarihi = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "b191210049@sakarya.edu.tr",
-                            EmailConfirmed = true,
+                            EmailConfirmed = false,
                             HayvanId = 0,
                             LockoutEnabled = false,
                             NormalizedEmail = "B191210049@SAKARYA.EDU.TR",
                             NormalizedUserName = "B191210049@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKV5VfjPEmmwNhehmbDAWkWXkbGpx/O2UEH4FvgLcVtUhbpHMvfYhQIOTEz9OSuKzA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEEE/JRniikX6w6Gcmg3KQF7/1HbyZfBJqW8i+UTThF7gMS4eftU0RmUB8QtIBsr8wA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
                             UserName = "b191210049@sakarya.edu.tr"
-                        },
-                        new
-                        {
-                            Id = "a18be9c0-aa65-4af8-bd17-00bd9344e576",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "1c85e7d9-e23d-47ef-acac-8b2d52d87c96",
-                            DogumTarihi = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "b181200378@sakarya.edu.tr",
-                            EmailConfirmed = true,
-                            HayvanId = 0,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "B181200378@SAKARYA.EDU.TR",
-                            NormalizedUserName = "B181200378@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAENQfn5Tth3Chqk32k6cqBF6lNlNpWxPx7mJIjqzbhpBI/mFteH8iIM1991t4aGIaTQ==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "",
-                            TwoFactorEnabled = false,
-                            UserName = "b181200378@sakarya.edu.tr"
-                        },
-                        new
-                        {
-                            Id = "a18be9c0-aa65-4af8-bd17-00bd9344e577",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "0a45e9f3-cbca-4d4d-adc3-bebc13d042c9",
-                            DogumTarihi = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "g171210105@sakarya.edu.tr",
-                            EmailConfirmed = true,
-                            HayvanId = 0,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "G171210105@SAKARYA.EDU.TR",
-                            NormalizedUserName = "G171210105@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPhYjBlWeH0vYwy+j0CELb2GGQ59uD97dqiUDXHCi7NuJya+3hGMK6W6mHMgdd6YdQ==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "",
-                            TwoFactorEnabled = false,
-                            UserName = "g171210105@sakarya.edu.tr"
                         });
                 });
 
@@ -292,14 +258,14 @@ namespace HayvanBarinagiCalisma.Data.Migrations
                         new
                         {
                             Id = "1",
-                            ConcurrencyStamp = "18df1b10-dea0-4520-b5a4-36849d400d7f",
+                            ConcurrencyStamp = "55e020cd-e373-4117-b78f-7e6c6c5580ac",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "2",
-                            ConcurrencyStamp = "565d8f51-8df6-4cba-b5fa-b9ff59c271c7",
+                            ConcurrencyStamp = "ed94acc0-fa9e-4977-8f2c-75be26739ebb",
                             Name = "Uye",
                             NormalizedName = "UYE"
                         });
@@ -395,16 +361,6 @@ namespace HayvanBarinagiCalisma.Data.Migrations
                         new
                         {
                             UserId = "a18be9c0-aa65-4af8-bd17-00bd9344e575",
-                            RoleId = "1"
-                        },
-                        new
-                        {
-                            UserId = "a18be9c0-aa65-4af8-bd17-00bd9344e576",
-                            RoleId = "1"
-                        },
-                        new
-                        {
-                            UserId = "a18be9c0-aa65-4af8-bd17-00bd9344e577",
                             RoleId = "1"
                         });
                 });
